@@ -1,11 +1,6 @@
-import os
 from eve import Eve
 from wsgi import settings
-from honcho.environ import parse
 
-d = parse('../.env')
-for k, v in d.items():
-    os.environ[k] = v
 
 api = Eve()
 
