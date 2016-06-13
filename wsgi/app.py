@@ -1,8 +1,7 @@
 from eve import Eve
-from wsgi import settings
 
 
-api = Eve(settings=settings)
+api = Eve(settings='wsgi/settings.py')
 
 if __name__ == '__main__':
     api.run()
