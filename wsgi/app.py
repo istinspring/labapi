@@ -1,5 +1,5 @@
 from eve import Eve
-from wsgi import settings
+from . import settings
 
 
 api = Eve(settings=settings)
