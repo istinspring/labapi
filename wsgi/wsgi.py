@@ -55,7 +55,7 @@ if __name__ == '__main__':
     elif fwtype == "flask":
         from flask import Flask
         server = Flask(__name__)
-        server.wsgi_app = application.api
+        server.wsgi_app = application.app
         server.run(host=ip, port=port)
     else:
         from wsgiref.simple_server import make_server

@@ -1,2 +1,2 @@
 run:
-	honcho run python wsgi/app.py
+	honcho run -d wsgi python app.py
