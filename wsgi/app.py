@@ -1,5 +1,7 @@
+import os
 from eve import Eve
 
+print os.getcwd()
 
 api = Eve(settings='settings.py')
 
