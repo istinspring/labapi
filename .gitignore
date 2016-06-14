@@ -1,3 +1,5 @@
 .tmuxp.yaml
 .env
 .pylintrc
+
+*.pyc
