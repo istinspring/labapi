@@ -1,7 +1,8 @@
 from eve import Eve
 
 
-api = Eve(settings='settings.py')
+api = Eve()
+
 
 if __name__ == '__main__':
     api.run()

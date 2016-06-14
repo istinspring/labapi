@@ -12,8 +12,10 @@ import os
 import imp
 import sys
 
-sys.path.insert(0, os.path.dirname(__file__) or '.')
+ROOT_DIR = os.path.join(os.environ['OPENSHIFT_REPO_DIR'])
+os.environ['EVE_SETTINGS'] = os.path.join(ROOT_DIR, 'wsgi/settings.py')
 try:
+    sys.path.append(ROOT_DIR)
     virtenv = os.path.join(
         os.environ.get('OPENSHIFT_PYTHON_DIR', '.'), 'virtenv')
     python_version = "python" + str(sys.version_info[0]) + "." + \

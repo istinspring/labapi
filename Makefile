@@ -1,2 +1,2 @@
 run:
-	honcho run -d wsgi python app.py
+	honcho run -d wsgi -e ../.env python wsgi/app.py
